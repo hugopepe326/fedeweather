@@ -549,9 +549,14 @@ body {
 /* RESPONSIVE TABLET */
 @media (max-width: 860px) {
   .stats-grid { grid-template-columns: repeat(3, 1fr); }
-  .forecast-grid { grid-template-columns: repeat(3, 1fr); }
-  .forecast-day:nth-child(4),
-  .forecast-day:nth-child(5) { display: none; }
+  .forecast-grid { grid-template-columns: repeat(5, 1fr); }
+  .forecast-day { padding: .7rem .2rem; }
+  .forecast-date { font-size: .65rem; }
+  .forecast-icon { width: 36px; height: 36px; }
+  .forecast-icon svg { width: 36px; height: 36px; }
+  .forecast-temp-high { font-size: .85rem; }
+  .forecast-temp-low { font-size: .68rem; }
+  .forecast-desc { font-size: .58rem; }
   .aqi-pollutants { gap: .3rem; }
   .pollutant { min-width: 80px; }
   .chart-wrap { height: 180px; }
@@ -650,17 +655,16 @@ body {
   .hourly-icon svg { width: 26px; height: 26px; }
   
   .forecast-grid { 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: .4rem;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: .25rem;
   }
-  .forecast-day { padding: .7rem .25rem; }
-  .forecast-day:nth-child(5) { display: none; }
-  .forecast-date { font-size: .65rem; }
-  .forecast-icon { width: 36px; height: 36px; }
-  .forecast-icon svg { width: 36px; height: 36px; }
-  .forecast-temp-high { font-size: .85rem; }
-  .forecast-temp-low { font-size: .68rem; }
-  .forecast-desc { font-size: .58rem; }
+  .forecast-day { padding: .5rem .1rem; }
+  .forecast-date { font-size: .58rem; }
+  .forecast-icon { width: 28px; height: 28px; }
+  .forecast-icon svg { width: 28px; height: 28px; }
+  .forecast-temp-high { font-size: .72rem; }
+  .forecast-temp-low { font-size: .58rem; }
+  .forecast-desc { font-size: .5rem; }
   
   .alert-item { padding: .7rem .8rem; gap: .6rem; }
   .alert-icon svg { width: 18px; height: 18px; }
@@ -684,6 +688,13 @@ body {
   .icon-container { width: 85px; height: 70px; }
   .pollutant { min-width: 62px; }
   .chart-wrap { height: 130px; }
-  .forecast-grid { gap: .3rem; }
+  .forecast-grid { gap: .25rem; }
+  .forecast-day { padding: .45rem .08rem; }
+  .forecast-date { font-size: .55rem; }
+  .forecast-icon { width: 24px; height: 24px; }
+  .forecast-icon svg { width: 24px; height: 24px; }
+  .forecast-temp-high { font-size: .68rem; }
+  .forecast-temp-low { font-size: .55rem; }
+  .forecast-desc { font-size: .48rem; }
   .hourly-item { min-width: 56px; }
 }
